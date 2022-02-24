@@ -4,14 +4,14 @@
   <img src="https://telegra.ph/file/7cc7870ce754c2e7747a6.jpg">
 </p>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FYukkiBot%2FYukkiMultiSpamBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FLithiumBot%2FLithiumSpamGoD)
 
 ## String Session
 ### To Get Details Of StringSession Follow Step: 
 
     - Go To Telegram Group And Send #api_hash
     - Click Start
-    - Send Ur Phone Number To @UseTGXBot
+    - Send Your Phone Number To @UseTGXBot
     - U Received Code From Telegram Like This=VGFK0rHbzaF
     - Copy Ur Code
     - Paste Ur Code in @UseTGXBot
