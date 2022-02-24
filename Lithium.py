@@ -27,7 +27,11 @@ seven = STRING7
 eight = STRING8
 ninth = STRING9
 tenth = STRING10
-
+eleven = STRING11
+twelve = STRING12
+thirteen = STRING13
+fourteen = STRING14
+fifteen = STRING15
 
 idk = ""
 ydk = ""
@@ -39,6 +43,11 @@ bdk = ""
 cdk = ""
 edk = ""
 ddk = ""
+mdk = ""
+qdk = ""
+fdk = ""
+pdk = ""
+xdk = ""
 
 
 que = {}
@@ -58,6 +67,11 @@ async def start_yukki():
     global cdk
     global ddk
     global edk
+    global mdk
+    global qdk
+    global fdk
+    global pdk
+    global xdk    
     if smex:
         session_name = str(smex)
         print("String 1 Found")
@@ -309,6 +323,131 @@ async def start_yukki():
             await edk.start()
         except Exception as e:
             pass 
+          
+              if eleven:
+        session_name = str(eleven)
+        print("String 11 Found")
+        mdk = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 11")
+            await mdk.start()
+            await mdk(functions.channels.JoinChannelRequest(channel="@LithiumSpams"))
+            await mdk(functions.channels.JoinChannelRequest(channel="@DeviLisReaper"))
+            botme = await mdk.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            SMEX_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
+        print("Session 11 not Found")
+        pass
+        session_name = "startup"
+        mdk = TelegramClient(session_name, a, b)
+        try:
+            await mdk.start()
+        except Exception as e:
+            pass
+          
+    if twelve:
+        session_name = str(twelve)
+        print("String 12 Found")
+        qdk = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 12")
+            await qdk.start()
+            await qdk(functions.channels.JoinChannelRequest(channel="@LithiumSpams"))
+            await qdk(functions.channels.JoinChannelRequest(channel="@DeviLisReaper"))
+            botme = await qdk.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            SMEX_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
+        print("Session 12 not Found")
+        pass
+        session_name = "startup"
+        qdk = TelegramClient(session_name, a, b)
+        try:
+            await qdk.start()
+        except Exception as e:
+            pass
+          
+    if thirteen:
+        session_name = str(thirteen)
+        print("String 13 Found")
+        fdk = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 13")
+            await fdk.start()
+            await fdk(functions.channels.JoinChannelRequest(channel="@LithiumSpams"))
+            await ydk(functions.channels.JoinChannelRequest(channel="@DeviLisReaper"))
+            botme = await fdk.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            SMEX_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
+        print("Session 13 not Found")
+        pass
+        session_name = "startup"
+        fdk = TelegramClient(session_name, a, b)
+        try:
+            await fdk.start()
+        except Exception as e:
+            pass
+          
+    if fourteen:
+        session_name = str(fourteen)
+        print("String 14 Found")
+        pdk = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 14")
+            await pdk.start()
+            await pdk(functions.channels.JoinChannelRequest(channel="@LithiumSpams"))
+            await ydk(functions.channels.JoinChannelRequest(channel="@DeviLisReaper"))
+            botme = await pdk.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            SMEX_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
+        print("Session 14 not Found")
+        pass
+        session_name = "startup"
+        pdk = TelegramClient(session_name, a, b)
+        try:
+            await pdk.start()
+        except Exception as e:
+            pass
+          
+    if fifteen:
+        session_name = str(fifteen)
+        print("String 15 Found")
+        xdk = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 15")
+            await xdk.start()
+            await xdk(functions.channels.JoinChannelRequest(channel="@LithiumSpams"))
+            await ydk(functions.channels.JoinChannelRequest(channel="@DeviLisReaper"))
+            botme = await xdk.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            SMEX_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
+        print("Session 15 not Found")
+        pass
+        session_name = "startup"
+        xdk = TelegramClient(session_name, a, b)
+        try:
+            await xdk.start()
+        except Exception as e:
+            pass
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(start_yukki())       
@@ -338,7 +477,12 @@ async def gifspam(e, smex):
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.join"))        
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.join")) 
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@qdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@pdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))        
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
     if e.sender_id in SMEX_USERS:
@@ -364,7 +508,12 @@ async def _(e):
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))        
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@qdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@pdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))   
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/HGYs1wvsPUplMmM1\n\n.pjoin HGYs1wvsPUplMmM1"
     if e.sender_id in SMEX_USERS:
@@ -391,7 +540,12 @@ async def _(e):
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))        
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.leave")) 
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@qdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@pdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))        
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
@@ -422,6 +576,11 @@ async def _(e):
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@qdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@pdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
     error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
@@ -459,10 +618,15 @@ async def spam(e):
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @sdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @adk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\..bigspam"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\..bigspam"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@qdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@pdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
@@ -508,6 +672,11 @@ async def spam(e):
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@qdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@pdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 async def _(e):
     global que
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
@@ -550,6 +719,11 @@ async def _(e):
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@qdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@pdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 async def _(e):
     global que
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
@@ -595,6 +769,11 @@ async def _(e):
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@qdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@pdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
@@ -619,6 +798,11 @@ async def ping(e):
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@qdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@pdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
         text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nPlease wait till it reboots..."
@@ -663,6 +847,26 @@ async def restart(e):
             await edk.disconnect()
         except Exception as e:
             pass
+        try:
+            await mdk.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await qdk.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await fdk.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await pdk.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await xdk.disconnect()
+        except Exception as e:
+            pass          
         os.execl(sys.executable, sys.executable, *sys.argv)
         quit()
 
@@ -681,6 +885,11 @@ async def restart(e):
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@mdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@qdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@fdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@pdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@xdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
        text = "𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n𝙐𝙩𝙞𝙡𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.ping\n.restart\n\n𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.join\n.pjoin\n.leave\n\n𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.spam\n.bigspam\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
@@ -730,8 +939,28 @@ if len(sys.argv) not in (1, 3, 4):
         ddk.disconnect()
     except Exception as e:
         pass
-else:
     try:
+        mdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        qdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        fdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        pdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        xdk.disconnect()
+    except Exception as e:
+        pass      
+else:
+try:
         idk.run_until_disconnected()
     except Exception as e:
         pass
@@ -769,5 +998,25 @@ else:
         pass
     try:
         ddk.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        mdk.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        qdk.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        fdk.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        pdk.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        xdk.run_until_disconnected()
     except Exception as e:
         pass
