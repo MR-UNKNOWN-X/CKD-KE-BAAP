@@ -63,6 +63,31 @@
         "value": "",
         "required": false
       },
+      "STRING11": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING12": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING13": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING14": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING15": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
       "API_HASH": {
         "description": "Api Hash",
         "value": "",
