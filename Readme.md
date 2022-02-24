@@ -1,4 +1,4 @@
-# LITHIUM SPAMBOT 
+# 🔥👑LITHIUM SPAMBOT👑🔥
 
 <p align="center">
   <img src="https://telegra.ph/file/7cc7870ce754c2e7747a6.jpg">
