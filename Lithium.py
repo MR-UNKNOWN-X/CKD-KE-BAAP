@@ -960,7 +960,7 @@ if len(sys.argv) not in (1, 3, 4):
     except Exception as e:
         pass      
 else:
-try:
+    try:
         idk.run_until_disconnected()
     except Exception as e:
         pass
