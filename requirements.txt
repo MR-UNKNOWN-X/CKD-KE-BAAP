@@ -1,4 +1,1 @@
-Telethon
-python-dotenv
-asyncio
-TgCrypto
+telethon

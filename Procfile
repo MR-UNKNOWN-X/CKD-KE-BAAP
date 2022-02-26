@@ -1,1 +1,1 @@
-worker: python3 Lithium.py
+worker: python3 LithiumHack.py
