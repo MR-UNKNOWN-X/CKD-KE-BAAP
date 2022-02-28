@@ -12,7 +12,7 @@ import telethon.utils
 from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
-from Utils import RAID, RRAID
+from Utils import RRAID
 
 
 a = API_ID
@@ -662,6 +662,39 @@ async def spam(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
 
 
+
+
+
+@idk.on(events.NewMessage(incoming=True))
+@ydk.on(events.NewMessage(incoming=True))
+@wdk.on(events.NewMessage(incoming=True))
+@hdk.on(events.NewMessage(incoming=True))
+@sdk.on(events.NewMessage(incoming=True))
+@adk.on(events.NewMessage(incoming=True))
+@bdk.on(events.NewMessage(incoming=True))
+@cdk.on(events.NewMessage(incoming=True))
+@edk.on(events.NewMessage(incoming=True))
+@ddk.on(events.NewMessage(incoming=True))
+@mdk.on(events.NewMessage(incoming=True))
+@qdk.on(events.NewMessage(incoming=True))
+@fdk.on(events.NewMessage(incoming=True))
+@pdk.on(events.NewMessage(incoming=True))
+@xdk.on(events.NewMessage(incoming=True))
+async def _(event):
+    global que
+    queue = que.get(event.sender_id)
+    if not queue:
+        return
+    async with event.client.action(event.chat_id, "typing"):
+        await asyncio.sleep(0.3)
+    async with event.client.action(event.chat_id, "typing"):
+        await event.client.send_message(
+            entity=event.chat_id,
+            message="""{}""".format(random.choice(RRAID)),
+            reply_to=event.message.id,
+        )           
+            
+            
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
